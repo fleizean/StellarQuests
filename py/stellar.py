@@ -57,17 +57,17 @@ paymentsoperations += """""" + Fore.CYAN + """𓆩------------------------------
 
 # Second Phase Text
 configurationoperations = Fore.CYAN + """
-𓆩--------- Configuration Operations ---------𓆪"""
+𓆩----------- Configuration Operations -----------𓆪"""
 configurationoperations += """""" + Fore.LIGHTRED_EX + """
 1- Account Merge Quest
 2- Manage Data Quest
 3- Set Options - Home Domain Quest
-4- Set Options - Weights, Thresholds, and Signers
+4- Set Options - Weights, Thresholds, and Signers Quest
 5- Set Flags Quest
 6- Hiçbiri
 7- Exit
 """
-configurationoperations += """""" + Fore.CYAN + """𓆩--------------------------------------------𓆪"""
+configurationoperations += """""" + Fore.CYAN + """𓆩------------------------------------------------𓆪"""
 
 ## Third Phase Text
 advancedoperations = Fore.CYAN + """
