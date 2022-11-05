@@ -45,12 +45,13 @@ firstwelcome += """""" + Fore.CYAN + """𓆩----------------------------------�
 paymentsoperations = Fore.CYAN + """
 𓆩--------- Payment Operations ---------𓆪"""
 paymentsoperations += """""" + Fore.LIGHTRED_EX + """
-1- Payment Quest
-2- Change Trust Quest
-3- Manage Offers Quest
-4- Path Payments Quest
-5- Hiçbiri
-6- Exit
+1- Create Account Quest
+2- Payment Quest
+3- Change Trust Quest
+4- Manage Offers Quest
+5- Path Payments Quest
+6- Hiçbiri
+7- Exit
 """
 paymentsoperations += """""" + Fore.CYAN + """𓆩--------------------------------------𓆪"""
 
