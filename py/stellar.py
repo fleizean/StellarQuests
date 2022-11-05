@@ -61,9 +61,9 @@ configurationoperations = Fore.CYAN + """
 configurationoperations += """""" + Fore.LIGHTRED_EX + """
 1- Account Merge Quest
 2- Manage Data Quest
-3- Set Flags Quest
-4- Set Options Home Domain Quest
-5- Set Options Weights Quest
+3- Set Options - Home Domain Quest
+4- Set Options - Weights, Thresholds, and Signers
+5- Set Flags Quest
 6- Hiçbiri
 7- Exit
 """
@@ -74,10 +74,10 @@ advancedoperations = Fore.CYAN + """
 𓆩--------- Advanced Operations ---------𓆪"""
 advancedoperations += """""" + Fore.LIGHTRED_EX + """
 1- Bump Sequence Quest
-2- Claimable Balances Quest
-3- Clawbacks Quest
-4- Liquidity Pools Quest
-5- Sponsorship Quest
+2- Sponsorships Quest
+3- Claimable Balances Quest
+4- Clawbacks Quest
+5- Liquidity Pools Quest
 6- Hiçbiri
 7- Exit
 """
@@ -142,15 +142,15 @@ while(1):
             os.system("go run solution.go")
         elif secim2 == "3":
             flag_in_dir = 1
-            os.chdir(setflag_dir)
+            os.chdir(setoptionshomedomain_dir)
             os.system("go run solution.go")
         elif secim2 == "4":
             flag_in_dir = 1
-            os.chdir(setoptionshomedomain_dir)
+            os.chdir(setoptionsweightsthresholds_dir)
             os.system("go run solution.go")
         elif secim2 == "5":
             flag_in_dir = 1
-            os.chdir(setoptionsweightsthresholds_dir)
+            os.chdir(setflag_dir)
             os.system("go run solution.go")
         elif secim2 == "6":
             continue
@@ -166,19 +166,19 @@ while(1):
             os.system("go run solution.go")
         elif secim2 == "2":
             flag_in_dir = 1
-            os.chdir(claimablebalances_dir)
+            os.chdir(sponsorship_dir)
             os.system("go run solution.go")
         elif secim2 == "3":
             flag_in_dir = 1
-            os.chdir(clawbacks_dir)
+            os.chdir(claimablebalances_dir)
             os.system("go run solution.go")
         elif secim2 == "4":
             flag_in_dir = 1
-            os.chdir(liquiditypools_dir)
+            os.chdir(clawbacks_dir)
             os.system("go run solution.go")
         elif secim2 == "5":
             flag_in_dir = 1
-            os.chdir(sponsorship_dir)
+            os.chdir(liquiditypools_dir)
             os.system("go run solution.go")
         elif secim2 == "6":
             continue
