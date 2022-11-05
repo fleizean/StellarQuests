@@ -97,7 +97,6 @@ sidequest += """""" + Fore.CYAN + """𓆩------------------------------𓆪"""
 flag_in_dir = 0
 
 while(1):
-    os.system('cls')
     print(firstwelcome + Fore.WHITE)
     secim = input("Quest numarası giriniz: ")
     if secim == "1":
@@ -157,7 +156,6 @@ while(1):
         elif secim2 == "7":
             exit()
     elif secim == "3":
-        os.system('cls')
         print(advancedoperations + Fore.WHITE)
         secim2 = input("Advanced Quest numarası giriniz: ")
         if secim2 == "1":
