@@ -94,6 +94,8 @@ sidequest += """""" + Fore.LIGHTRED_EX + """
 sidequest += """""" + Fore.CYAN + """𓆩------------------------------𓆪"""
 ######################
 
+flag_in_dir = 0
+
 while(1):
     os.system('cls')
     print(firstwelcome + Fore.WHITE)
@@ -103,18 +105,23 @@ while(1):
         print(paymentsoperations + Fore.WHITE)
         secim2 = input("Payment Quest numarası giriniz: ")
         if secim2 == "1":
+            flag_in_dir = 1
             os.chdir(createaccount_dir)
             os.system("go run solution.go")
         elif secim2 == "2":
+            flag_in_dir = 1
             os.chdir(payment_dir)
             os.system("go run solution.go")
         elif secim2 == "3":
+            flag_in_dir = 1
             os.chdir(changetrust_dir)
             os.system("go run solution.go")
         elif secim2 == "4":
+            flag_in_dir = 1
             os.chdir(manageoffers_dir)
             os.system("go run solution.go")
         elif secim2 == "5":
+            flag_in_dir = 1
             os.chdir(pathpayments_dir)
             os.system("go run solution.go")
         elif secim2 == "6":
@@ -126,18 +133,23 @@ while(1):
         print(configurationoperations + Fore.WHITE)
         secim2 = input("Configuration Quest numarası giriniz: ")
         if secim2 == "1":
+            flag_in_dir = 1
             os.chdir(accountmerge_dir)
             os.system("go run solution.go")
         elif secim2 == "2":
+            flag_in_dir = 1
             os.chdir(managedata_dir)
             os.system("go run solution.go")
         elif secim2 == "3":
+            flag_in_dir = 1
             os.chdir(setflag_dir)
             os.system("go run solution.go")
         elif secim2 == "4":
+            flag_in_dir = 1
             os.chdir(setoptionshomedomain_dir)
             os.system("go run solution.go")
         elif secim2 == "5":
+            flag_in_dir = 1
             os.chdir(setoptionsweightsthresholds_dir)
             os.system("go run solution.go")
         elif secim2 == "6":
@@ -149,18 +161,23 @@ while(1):
         print(advancedoperations + Fore.WHITE)
         secim2 = input("Advanced Quest numarası giriniz: ")
         if secim2 == "1":
+            flag_in_dir = 1
             os.chdir(bumpsequence_dir)
             os.system("go run solution.go")
         elif secim2 == "2":
+            flag_in_dir = 1
             os.chdir(claimablebalances_dir)
             os.system("go run solution.go")
         elif secim2 == "3":
+            flag_in_dir = 1
             os.chdir(clawbacks_dir)
             os.system("go run solution.go")
         elif secim2 == "4":
+            flag_in_dir = 1
             os.chdir(liquiditypools_dir)
             os.system("go run solution.go")
         elif secim2 == "5":
+            flag_in_dir = 1
             os.chdir(sponsorship_dir)
             os.system("go run solution.go")
         elif secim2 == "6":
@@ -172,9 +189,11 @@ while(1):
         print(sidequest + Fore.WHITE)
         secim2 = input("Side Quest numarası giriniz: ")
         if secim2 == "1":
+            flag_in_dir = 1
             os.chdir(feebumptransactions_dir)
             os.system("go run solution.go")
         elif secim2 == "2":
+            flag_in_dir = 1
             os.chdir(mintannftonstellar_dir)
             os.system("go run solution.go")
         elif secim2 == "3":
@@ -185,3 +204,10 @@ while(1):
         exit()
     else:
         print("Girdiğiniz numara ile eşleşen bir veri yok.")
+    if flag_in_dir == 1:
+        os.chdir("..")
+        os.chdir("..")
+        os.chdir("..")
+        os.chdir("..")
+        os.chdir("py")
+        
