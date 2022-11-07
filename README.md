@@ -16,4 +16,5 @@ When you download this project to your computer, if you have Unix and similar op
 # Referans? (Referanced by Altug)
 
 Bu projenin Go ile olan tüm kısımları Altuğ adlı yazılımcı kardeşimden aldım sadece Python kısımları ile süsledim. Github adresi burada https://github.com/altugbakan
+
 I bought all the parts of this project with Go from my software developer brother named Altug and decorated them with only Python parts. Github address here https://github.com/altugbakan
